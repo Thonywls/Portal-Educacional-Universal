@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portal Polivalente</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+</div>
+
+<body>
+<body>
+
+<!-- MENU LATERAL -->
+
+<div class="sidebar">
+
+    <img src="imagens/logo.png" class="logo">
+
+    <h2>POLIVALENTE</h2>
+
+    <ul>
+        <li>🏠 Início</li>
+        <li>👤 Perfil</li>
+        <li><a href="boletins.html">📘 Boletins</a></li>
+        <li><a href="disciplinas.html">📚 Disciplinas</a></li>
+        <li><a href="calendario.html">📅 Calendário</a></li>
+        <li>📌 Projetos</li>
+        <li>📢 Avisos</li>
+    </ul>
+
+</div>
+
+<!-- CONTEÚDO -->
+
+<div class="main">
+
+    <!-- TOPO -->
+
+    <div class="topbar">
+
+        <div>
+
+            <h1>Portal do Aluno</h1>
+
+            <p class="subtitulo">
+                Bem-vindo ao sistema acadêmico do Colégio Polivalente
+            </p>
+
+        </div>
+
+        <div class="user">
+            <span id="usuario"></span> 👨‍🎓
+        </div>
+
+    </div>
+
+    <!-- CARDS -->
+
+    <div class="cards">
+
+        <!-- PERFIL -->
+
+        <div class="card perfil">
+
+            <h2>👤 Perfil do Aluno</h2>
+
+            <p><b>Nome:</b> Anthony</p>
+
+            <p><b>Idade:</b> 16 anos</p>
+
+            <p><b>Cidade:</b> Itapetinga - BA</p>
+
+            <p><b>Sala:</b> 2° Ano do Ensino Médio</p>
+
+            <p><b>Status:</b> Menor de idade</p>
+
+        </div>
+
+        <!-- CALENDÁRIO -->
+
+        <div class="card calendário">
+
+            <h2>📅 Calendário</h2>
+
+            <p>Feira de Ciências — 26 de Maio</p>
+
+            <p>Simulado ENEM — 30 de Maio</p>
+
+            <p>Entrega de Projetos — 05 de Junho</p>
+
+        </div>
+
+        <!-- AVISOS -->
+
+        <div class="card avisos">
+
+            <h2>📢 Avisos</h2>
+
+            <p>Reunião de Pais — 24/05</p>
+
+            <p>Inscrições abertas para projetos</p>
+
+        </div>
+
+        <!-- DISCIPLINAS -->
+
+        <div class="card disciplinas">
+
+            <h2>📚 Disciplinas</h2>
+
+            <p>Matemática</p>
+
+            <p>Português</p>
+
+            <p>História</p>
+
+            <p>Biologia</p>
+
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 Colégio Polivalente de Itapetinga - Bahia
+    </footer>
+
+</div>
+
+</div>
+<script>
+
+    let aluno = localStorage.getItem("aluno");
+
+    document.getElementById("usuario").innerHTML = aluno;
+
+</script>
+</body>
+</html>

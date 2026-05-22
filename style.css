@@ -1,0 +1,294 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    display:flex;
+    background:#f4f7fb;
+}
+
+/* MENU LATERAL */
+
+.sidebar{
+    width:260px;
+    height:100vh;
+    background:#0d1b52;
+    color:white;
+    padding:20px;
+    position:fixed;
+    left:0;
+    top:0;
+}
+
+.logo{
+    width:120px;
+    display:block;
+    margin:0 auto 20px;
+}
+
+.sidebar h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.sidebar li:hover{
+    background:#304ffe;
+
+    transform:translateX(5px);
+
+}
+
+
+/* CONTEÚDO */
+
+.main{
+    margin-left:260px;
+
+    width:calc(100% - 260px);
+
+    min-height:100vh;
+
+    padding:30px;
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+/* TOPO */
+
+.topbar{
+    background:white;
+    padding:20px;
+
+    border-radius:20px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:30px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.topbar{
+    background:white;
+
+    padding:25px 30px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.user{
+    background:#0d1b52;
+
+    color:white;
+
+    padding:12px 22px;
+
+    border-radius:14px;
+
+    font-weight:bold;
+}
+
+/* GRID DOS CARDS */
+
+.cards{
+    display:grid;
+
+    grid-template-columns:repeat(2, 1fr);
+
+    gap:20px;
+
+    flex:1;
+}
+
+/* CARDS */
+
+.card{
+    border:1px solid #e3e8ef;
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    color:#0d1b52;
+
+    margin-bottom:15px;
+}
+
+.card p{
+    margin:10px 0;
+
+    color:#444;
+}
+.perfil{
+    border-left:8px solid #304ffe;
+}
+
+.calendario{
+    border-left:8px solid #7c4dff;
+}
+
+.avisos{
+    border-left:8px solid #ff7043;
+}
+
+.disciplinas{
+    border-left:8px solid #43a047;
+}
+footer{
+    text-align:center;
+
+    margin-top:30px;
+
+    padding:20px;
+
+    color:#555;
+}
+/* CORES DOS CARDS */
+
+.perfil{
+    border-left:8px solid #304ffe;
+}
+
+.calendario{
+    border-left:8px solid #7c4dff;
+}
+
+.avisos{
+    border-left:8px solid #ff7043;
+}
+
+.disciplinas{
+    border-left:8px solid #43a047;
+}
+/* RODAPÉ */
+
+footer{
+    text-align:center;
+
+    padding:20px;
+
+    color:#555;
+}
+.subtitulo{
+    color:#666;
+
+    margin-top:5px;
+
+    font-size:15px;
+}
+.sidebar a{
+    color:white;
+
+    text-decoration:none;
+
+    display:block;
+}
+/* LOGIN */
+
+.login-body{
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:100vh;
+
+    background:#0d1b52;
+}
+
+.login-box{
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    width:350px;
+
+    text-align:center;
+
+    box-shadow:0 4px 20px rgba(0,0,0,0.2);
+}
+
+.login-box input{
+    width:100%;
+
+    padding:15px;
+
+    margin:10px 0;
+
+    border-radius:10px;
+
+    border:1px solid #ccc;
+
+    outline:none;
+}
+
+.login-box button{
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#304ffe;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    margin-top:10px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.login-box button:hover{
+    background:#1f3290;
+}
